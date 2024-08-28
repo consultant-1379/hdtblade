@@ -1,0 +1,59 @@
+#!/usr/bin/env python
+# -*- coding: windows-1251 -*-
+# Copyright (C) 2005 Kiseliov Roman
+# Slightly modified for HDT use.
+# Ralph Schlosser, 23122010
+
+__rev_id__ = """$Id: xls2csv.py,v 1.1 2005/10/26 07:44:24 rvk Exp $"""
+
+
+from pyExcelerator import *
+import sys
+
+me, args = sys.argv[0], sys.argv[1:]
+
+#
+# Replace \n with \n\r like in windows. then source the ".sql" loader script in db_loader!
+# 
+#
+
+if args:
+    for arg in args:
+        print >>sys.stderr, 'Extracting first sheet from: ', arg
+        filename = arg.split(".xls");
+        csvfilename = filename[0] + ".csv";
+        print "Creating CSV file: ", csvfilename;
+        fh = open(csvfilename, "w");
+        for sheet_name, values in parse_xls(arg, 'cp1251'): # parse_xls(arg) -- default encoding
+            matrix = [[]]
+            print 'Sheet = "%s"' % sheet_name.encode('cp866', 'backslashreplace')
+            print '----------------'
+            for row_idx, col_idx in sorted(values.keys()):
+                v = values[(row_idx, col_idx)]
+                if isinstance(v, unicode):
+                    v = v.encode('cp866', 'backslashreplace')
+                else:
+                    v = `v`
+                v = '"%s"' % v.strip()
+                last_row, last_col = len(matrix), len(matrix[-1])
+                while last_row <= row_idx:
+                    matrix.extend([[]])
+                    last_row = len(matrix)
+
+                while last_col < col_idx:
+                    matrix[-1].extend([''])
+                    last_col = len(matrix[-1])
+
+                matrix[-1].extend([v])
+                    
+            for row in matrix:
+                csv_row = ', '.join(row)
+                # Windows style line ending to make it compatible w.
+                # SQL scripts.
+                line = csv_row.rstrip() + '\n';
+                fh.write(line);
+                print csv_row
+        fh.close();
+else:
+    print 'usage: %s (inputfile)+' % me
+

@@ -1,0 +1,24 @@
+Role Name,Role Description,Hardware Config Table Name
+ADMIN,Admin Server,admin_hw_config
+UAS,UNIX Application Server,uas_hw_config
+ENIQS,ENIQ Statistics Server,eniqs_hw_config
+BIS,Business Intelligence Server,bis_hw_config
+INF,O&M Infrastructure Server,inf_hw_config
+MWS,Management Work Station,mws_hw_config
+OMBS,Operation and Maintenance Backup Solution Server ,ombs_hw_config
+WAS,Windows Application Server,was_hw_config
+NEDSS,Network Element Distributed Support Server,nedss_hw_config
+NAS,Network Attached Storage (SFS) ,nas_hw_config
+OAP,OCS Access Portal Server ,oap_hw_config
+EBA,Event Based Applications Server,eba_hw_config
+EE,ENIQ Events,ee_hw_config
+OMSAS,OMSAS Server,omsas_hw_config
+STORAGE,Network Storage,storage_hw_config
+DAE,DAE,dae_hw_config
+SWITCH,Switch and Cables,switch_cable_hw_config
+ENCLOSURE,Blade Enclosure,enclosure_hw_config
+PRESENTATION,Presentation Server,presentation_hw_config
+MEDIATION,Mediation Server,mediation_hw_config
+COORDINATOR,Co-Ordinator Server,coordinator_hw_config
+IQSERVER,IQ Server,iqserver_hw_config
+TEST,Test Role,test_hw_config

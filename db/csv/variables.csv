@@ -1,0 +1,65 @@
+Variable Name,Variable Description,Variable Type
+ADMIN_CPU,CPU power for ADMIN,Double
+ADMIN_MEM,Number of GB for ADMIN,Double
+ADMIN_IO,IO throughput for ADMIN,Double
+UAS_CPU,CPU power for UAS,Double
+INF_CPU,CPU power for INF,Double
+INF_MEM,Number of GB for INF,Double
+INF_IO,IO throughput for INF,Double
+MWS_CPU,CPU power for MWS,Double
+MWS_MEM,Number of GB of memory for MWS,Double
+MWS_IO,IO throughput for MWS,Double
+OMBS_CPU,CPU power for OMBS,Double
+OMBS_MEM,Number of GB of memory for OMBS,Double
+OMBS_IO,IO throughput for OMBS,Double
+WAS_CPU,CPU power for WAS,Double
+WAS_MEM,Number of GB of memory for WAS,Double
+WAS_IO,IO throughput for WAS,Double
+BIS_CPU,CPU power for BIS,Double
+BIS_MEM,Number of GB of memory for BIS,Double
+BIS_IO,IO throughput for BIS,Double
+NEDSS_CPU,CPU power for NEDSS,Double
+NEDSS_MEM,Number of GB of memory for NEDSS,Double
+NEDSS_IO,IO throughput for NEDSS,Double
+NAS_CPU,CPU power for NAS,Double
+NAS_MEM,Number of GB of memory for NAS,Double
+NAS_IO,IO throughput for NAS,Double
+OAP_CPU,CPU power for OAP,Double
+OAP_MEM,Number of GB of memory for OAP,Double
+OAP_IO,IO throughput for OAP,Double
+EBA_CPU,CPU power for EBA,Double
+EBA_MEM,Number of GB of memory for EBA,Double
+EBA_IO,IO throughput for EBA,Double
+OMSAS_CPU,CPU power for INF,Double
+OMSAS_MEM,Number of GB for INF,Double
+OMSAS_IO,IO throughput for INF,Double
+STORAGE_CPU,CPU power for STORAGE,Double
+STORAGE_MEM,Number of GB for STORAGE,Double
+STORAGE_IO,IO throughput for STORAGE,Double
+ENIQS_CPU,CPU power for ENIQS,Double
+ENIQS_MEM,Number of GB for ENIQS,Double
+ENIQS_IO,IO throughput for ENIQS,Double
+DAE_CPU,CPU power for DAE,Double
+DAE_MEM,Number of GB for DAE,Double
+DAE_IO,IO throughput for DAE,Double
+SWITCH_CPU,CPU power for STORAGE,Double
+SWITCH_MEM,Number of GB for STORAGE,Double
+SWITCH_IO,IO throughput for STORAGE,Double
+ENCLOSURE_NUMBER,Number of Enclosures,Double
+EE_HARDWARE_SEL,Used for hardware selection in Eniq Events 11.2,Double
+EE_CPU,CPU power for EE,Double
+EE_MEM,Number of GB for EE,Double
+EE_IO,IO throughput for EE,Double
+PRESENTATION_CPU,CPU power for PRESENTATION,Double
+PRESENTATION_MEM,Number of GB for PRESENTATION,Double
+PRESENTATION_IO,IO throughput for PRESENTATION,Double
+MEDIATION_CPU,CPU power for MEDIATION,Double
+MEDIATION_MEM,Number of GB for MEDIATION,Double
+MEDIATION_IO,IO throughput for MEDIATION,Double
+COORDINATOR_CPU,CPU power for COORDINATOR,Double
+COORDINATOR_MEM,Number of GB for COORDINATOR,Double
+COORDINATOR_IO,IO throughput for COORDINATOR,Double
+IQSERVER_CPU,CPU power for IQSERVER,Double
+IQSERVER_MEM,Number of GB for IQSERVER,Double
+IQSERVER_IO,IO throughput for IQSERVER,Double
+TEST_CPU,Test CPU,Double

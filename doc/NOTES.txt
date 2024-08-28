@@ -1,0 +1,26 @@
+First page
+==========
+
+1.) Define System (drop down) and, optionally, individual Roles (servers like master server etc.)
+2.) Select Network Managed. Comb. (only show the ones that are applicable for the network selected)
+3.) Select size of networks, either select predef. size or specify options
+
+Second Page - Role page
+=======================
+
+...
+
+Third etc... further roles
+==========================
+
+Result page
+===========
+
+* Select button to generate report
+
+Report page
+===========
+
+* Generate Ericsson style report
+
+

@@ -1,0 +1,27 @@
+Parameter Name,Description,Type
+LR_NODE,Total No of LTE Nodes,Integer
+CN_NODE,Total No of EPC Network Nodes,Integer
+WR_CELL,Total No of WCDMA Cells,Integer
+GR_CELL,Total No of GRAN Cells,Integer
+EE_SUB,Total No of Subscribers,Integer
+EE_USERS,Total No of Concurrent Users,Integer
+PM_COUNT,Total No of PM Counters (millions),Integer
+PM_ROP,PM ROP Period,Integer
+FEATURE_PM,Use PM Feature,Boolean
+FEATURE_EBS,Use EBS Feature,Boolean
+FEATURE_STORAGE_CHECKPOINTS,Use Storage Checkpoints Feature,Boolean
+UAS_USERS,Number of UAS Users,Integer
+FEATURE_WAS_USERS,Number of WAS Users,Integer
+FEATURE_BIS_USERS,Number of BIS Users,Integer
+TEST_FEATURE1,Turn on Feature 1,Boolean
+TEST_FEATURE2,Turn on Feature 2,Boolean
+PARAMETER_EE_1,Parameter for EE 1,Integer
+PARAMETER_EE_2,Parameter for EE 2,Integer
+PARAMETER_EE_3,Parameter for EE 3,Integer
+PARAMETER_GSM,GSM Percentage,Integer
+PARAMETER_WCDMA,WCDMA Percentage,Integer
+FEATURE_EE_1,Feature for EE 1,Boolean
+FEATURE_EE_2,Feature for EE 2,Boolean
+FEATURE_EE_3,Feature for EE 3,Boolean
+PARAMETER_CONST_EE_1,Disabled parameter for EE 1,Integer
+PARAMETER_CONST_F_1,Disabled feature for EE 1,Boolean

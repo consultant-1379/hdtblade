@@ -1,0 +1,87 @@
+<%
+    var roleCounter = 0;
+%>
+<div id="condensed-report">
+<table class="report-result-tiles">
+<tbody>
+<%
+    var len = roleList.length;
+    
+    for(var i = 0; i < len ; i++) {
+        var this_role = roleList[i];
+        var role_name = this_role.name;
+        var role_alternatives = alternativesMap[role_name];
+        var contains_empty_app_list = hasAPPErrorsMap[role_name]; 
+%>
+    
+<%
+        if (roleCounter % 4 == 0) {
+%>
+        <tr>
+<%
+        }
+%>
+        <td>
+            <h4><%= roleCounter + 1 %>.) <%= this_role.description%></h4>
+
+            <table class="report-result">
+            <thead>
+                <th>APP</th>
+                <th>Quantity</th>
+            </thead>
+            <tbody>
+<%      
+        if (role_alternatives != undefined ) {
+            var s = role_alternatives.selectedAlternative;
+            var app_list = '';
+            
+            if (s) {
+                app_list = s.alternative;
+            }
+
+                if (app_list != '' && !contains_empty_app_list) {
+                    for (var j = 0; j < app_list.length; j++) {
+                        var app_num = app_list[j];
+%>
+                <tr>
+                    <td><%= app_num.name  %></td>                                                                                 
+<%
+                        if (app_num.userQtySet == false) {
+%>
+                            <td class="qty"><%= app_num.quantity %></td>   
+<%
+                        } else {
+%>
+                            <td class="user-qty"><%= app_num.quantity %></td>
+<%
+                        }
+%>
+                </tr>
+<%                    
+                    }
+                } else {
+%>
+                    <tr>
+                        <td>No result.</td>
+                    </tr>
+<%
+                }
+            }
+%>
+            </tbody>
+            </table>
+        </td>
+
+<%
+        if ((roleCounter + 1)  % 4 == 0) {
+%>
+            </tr>
+<%   
+        }
+
+        roleCounter = roleCounter + 1;
+    }
+%>
+</tbody>
+</table>
+</div>

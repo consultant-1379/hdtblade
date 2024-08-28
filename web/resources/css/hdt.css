@@ -1,0 +1,1027 @@
+div /*
+ * hdt.css - HDT CSS Design.
+ * Ralph Schlosser, 24/01/2011
+*/
+
+@charset "ISO-8859-1";
+
+html {
+    color: #000;
+    background: #FFF;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;	
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;    
+}
+
+fieldset, img {
+    border: 0;    
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;    
+}
+
+address, blockquote, dl, img, ol, p, table, ul, h4, table {
+    font-size: 0.7em;
+    line-height: 1.4;
+}
+
+li {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;    
+}
+
+html, body {
+    font-family: Arial, sans-serif;
+    background-color: #cecece;
+    color: #333;    
+}
+
+a, a.arrow-link {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover, a:focus, a:active, a.arrow-link:hover, a.arrow-link:active, a.arrow-link:focus {
+    color: #f00;
+    text-decoration: underline;    
+}
+
+/* The main container. */
+div#doc {
+    background: url("../images/content-bg.png") repeat-y scroll left top #F3F3F3;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+    width: 980px;
+}
+
+div#doc, div#doc div#main-nav {
+    z-index: 100!important;
+}
+
+/* Login area definitions. */
+div#login-area {
+    float: right;
+    border: 1px dotted #969696;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 2px;
+}
+
+div#login-area-container {	
+    background-color: #666666;
+    padding: 2px;
+}
+
+div#login-area-container li {
+    background-repeat: no-repeat;
+    background-position: 2px;
+    color: #fff;
+    padding-left: 21px;
+}
+
+.login-user , .login-expiry {
+    font-weight: bold;
+}
+
+div#login-area-container a {
+    color: #fff;
+}
+
+div#login-area-container a:hover, div#login-area-container a:focus, div#login-area-container a:active {
+    color: #FFE185;
+    text-decoration: underline;    
+}
+
+div#login-area li.person { 
+    background-image: url("../images/person.png");
+}
+
+div#login-area li.time { 
+    background-image: url("../images/time.png");
+}
+
+div.warn-note {
+    padding-top: 7px;
+    font-size: 0.7em;    
+    font-weight: bold;
+    color: #FF0522;
+}
+
+div.warn-note-res {
+    padding-top: 7px;
+    font-size: 0.7em;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* Header definitions. */
+div#header {   
+    height: 75px;
+    background-color: #fff;
+    position: relative;
+    width: 100%;  
+}
+
+div#header select, div#header input {
+    border: 1px solid #768086;
+    color: #333;
+    padding: 0 4px;   
+}
+
+div#header label {
+    position: absolute;
+    left: -9999em;    
+}
+
+div#header-elements {
+    float: right;    
+    width: 755px;
+}
+
+/* Main navigation definitions. */
+#main-nav {
+    background-color: #9BB5F2;	
+    height: 40px;
+    position: relative;
+    width: 100%;
+}
+
+#main-nav li {
+    display: block;
+    float: left;
+    position: relative;
+    height: inherit;
+}
+
+#main-nav li a.first {
+    border-left: 0 none;    
+}
+
+#main-nav-left {
+    width: 762px;
+    height: inherit;
+}
+
+#main-nav ul {
+    margin: 0;
+    padding: 0;
+    height: inherit;
+}
+
+#main-nav-left li a,
+#main-nav-left li span.disabled-nav {
+    border-left: 1px solid #fff;
+    float: left;
+    display: block;   
+    font-size: 1.6em;   
+    padding: 9px 10px 4px 10px;
+    height: 27px;
+}
+
+#main-nav-left a.first{
+    padding-left: 24px;
+}
+
+#main-nav-left li a:hover{
+    background-color: #F2D89B;
+    color: #000;
+    text-decoration: none;
+}
+
+#main-nav-left li a:active , #main-nav-left li a:focus, #main-nav-left li a.active {    
+    background-color: #F2C55C;
+    color: #000;
+}
+
+#main-nav-left li span.disabled-nav {
+    color: #7D7D7D;    
+}
+
+/* Logo area definitions. */
+div#logo {	     
+    margin-bottom: 0;
+    position: absolute;
+    left: 24px;
+    top: 3px;    
+}
+
+div#logo h1 {
+    font-size: 1.4em;
+    float: left;
+    padding: 10px;
+    display: block;
+}
+
+div#logo a {
+    background-image: url("../images/emasthead-sprite.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    outline: 0;
+    display: block;
+    float: left;
+    height: 44px;
+    width: 35px;
+}
+
+
+#quicklinks {
+    float: left;
+    margin-right: 15px;
+    margin-top: 8px;
+}
+
+
+#quicklinks li {
+    display: block;
+    float: left;    
+}
+
+#quicklinks li a {
+    border-left: 1px solid #696969;	
+    display: block;
+    float: left;
+    line-height: 1.2;
+    padding: 0 10px;    
+}
+
+#quicklinks li a.first, #main-nav li a.first{
+    border-left: 0 none;    
+}
+
+/* Content and content container definitions. */
+div#content-container, div#overview-container {
+    position:relative;
+    top: 5px;
+    left: 1px;    
+    padding-top: 8px;
+    width: 972px;  
+}
+
+div.content {
+    background-color: #fff;
+    padding-left: 15px;
+    padding-right: 13px;
+    background: url("../images/shadow_sides.png") repeat-y scroll 1px top;
+}
+
+/* Shadows for content area. */
+div#content-container, div#overview-container {
+    background: transparent url("../images/shadow_top.png") no-repeat scroll 1px top;
+}
+
+div.content h2 {
+    position: relative; /* Fix renderin issue in IE with text disappearing. */
+}
+
+div#content-end {
+    background: url("../images/shadow_bottom.png") no-repeat scroll 1px top;
+}
+
+/* Summary content definitions. */
+div#summary-content {
+    background-color: #E2E2E2;
+    padding-top: 5px;
+    margin: 5px 0px 0px;
+}
+
+table.summary-tbl {
+    padding-left: 8px;
+    margin-right: 50px;
+    float: left;
+}
+
+table.summary-tbl td.tbl-heading {
+    height: 20px;
+    padding-left: 8px;	
+    font-weight: bold;	
+}
+
+table.summary-tbl th, table.summary-tbl td {
+    height: 20px;
+    padding-left: 10px;
+    width: 150px; /* To avoid rendering issues. */
+}
+
+table.summary-tbl td.slim-row {
+    height: 15px;
+}
+
+/* Result table definitions. */
+table.result {    
+    margin-top: 5px;
+    width: 100%;
+    line-height: 1.8em;
+}
+
+table.result th {
+    background-color: #E4E4E4;
+    font-weight: bold;	
+}
+
+table.result th, table.result td {
+    padding-left: 8px;
+    padding-right: 7px;
+    border-top: 2px solid #FFFFFF;
+    padding-top: 7px;
+    background-color: #E4E4E4;
+}
+
+table.result th.first-col{
+    padding-left: 8px;
+}
+
+table.result th.last-col {
+    padding-right: 5px;
+}
+
+table.result td.parameters {
+    padding-left: 7px;
+    border: none;
+}
+
+table.result tr.parameters {
+    display: none;
+}
+
+table.result td {        
+    vertical-align: text-top;    
+}
+
+table.result td.recommended-col {    
+    width: 50%;
+}
+
+table.result td.role-col {
+    background-color: #F2F2F2;
+    width: 25%;
+}
+
+table.result td.end-row {    
+    font-size: 0.1em;
+    background-color: #F2F2F2;
+    border-bottom: 5px solid #E4E4E4;
+}
+
+/* Change Dimensioning Parameters Table */
+table.dimensioning-parameters-tbl {
+    width: 100%;
+    line-height: 1.8em;
+    padding-bottom: 3px;
+    margin-top: 10px;
+}
+
+table.dimensioning-parameters-tbl th, table.dimensioning-parameters-tbl td {
+    padding-left: 7px;
+    padding-top: 7px;
+    padding-right: 7px;
+}
+
+table.dimensioning-parameters-tbl th {
+    font-weight: bold;
+    background-color: #ADADAD;
+    color: #ffffff;   
+}
+
+
+table.dimensioning-parameters-tbl td {   
+    vertical-align: top;
+}
+
+table.dimensioning-parameters-tbl th.par-desc, table.dimensioning-parameters-tbl td.par-desc  {
+    width: 40%;
+}
+
+/* Hardware results table. */
+table.hw-results-tbl {    
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: 1.0em;	
+}
+
+table.hw-results-tbl th {
+    background-color: #ADADAD;
+    color: #ffffff;
+}
+
+/* Result table column widths */
+table.hw-results-tbl th.result-app {
+    width: 30%;
+}
+
+table.hw-results-tbl th.result-qty {
+    width: 10%;
+}
+
+table.hw-results-tbl th.result-desc {
+    width: 35%;
+}
+
+table.hw-results-tbl th.result-sel {
+    width: 25%;
+    text-align: right;
+}
+
+table.hw-results-tbl td {
+    background-color: #F2F2F2;
+    padding-bottom: 3px;
+    vertical-align: top;
+}
+
+table.hw-results-tbl th, table.hw-results-tbl td {
+    border-top: none;
+}
+
+table.hw-results-tbl tfoot td {
+    text-align: right;
+}
+
+table.hw-results-tbl tfoot td.hw-desc-report {
+    text-align: center;
+}
+
+
+/* Report definitions. */
+div#report-content {   
+    margin-top: 15px;   
+}
+
+div#report-heading h2 {
+    font-weight: bold;
+}
+
+div#report-heading h2.large-heading {
+    display: inline;
+}
+
+div#report-content h3 {     
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-bottom: 1px solid #000000;   
+}
+
+table.report-table {
+    margin-top: 5px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+    font-size: 0.7em;
+    line-height: 2.0em;
+
+}
+
+div#condensed-report h4 {
+    margin-top: 5px;
+    margin-left: 8px;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+table.report-table td.item {	
+    font-weight: bold;
+    width: 200px;
+}
+
+table.report-result {
+    margin-left: 8px;
+    font-size: 1.0em;   
+}
+
+table.report-result th {
+    font-weight: bold;
+}
+
+table.report-result th, table.report-result td {
+    padding-right: 8px;
+}
+
+table.report-result td.qty {
+    text-align: right;
+}
+
+table.report-result td.user-qty {
+    text-align: right;
+    color: #FF0522;
+}
+
+table.report-tiles tr {
+    margin-bottom: 5px;
+}
+
+table.report-result-tiles td {
+    vertical-align: text-top;
+}
+
+.value-input-left {
+    width: 40px;
+    display: block;
+    font-size: inherit;
+    float: left;
+}
+
+.qty-input-right, .qty-input-left {
+    width: 20px;
+    display: block;
+    font-size: inherit;
+}
+
+.qty-input-right {    
+    float: right;
+}
+
+.qty-input-left {
+    float: left;
+}
+
+.role-info {
+    display: block;
+}
+
+ul.role-menu {   
+    margin-left: 8px;
+    margin-bottom: 5px;
+    font-size: 1.0em;
+}
+
+ul.role-menu li {
+    margin-top: 8px;
+}
+
+.slim-row {
+    font-size: 0.1em;
+}
+
+
+
+/* Arrow link. */
+a.arrow-link {
+    background: url("../images/icons.gif") left -996px no-repeat;    
+    text-align: left;
+    border: none;	
+}
+
+a.arrow-link {
+    padding: 0 0 0 12px;    
+}
+
+/* Footer definitions. */
+div#footer {   
+    margin-top: 10px;
+    position: relative;
+    width: 100%;   
+}
+
+div.footer-content {
+    background-color: #9BB5F2;
+    color: #342F85;
+    padding-left: 15px;
+    padding-right: 13px;
+    height: 30px;
+    font-size: 0.9em;
+}
+
+div.footer-content li {
+    display: block;
+    float: left;
+    line-height: 1;
+    margin: 10px 0 5px;
+    padding: 0 10px;
+    border-left: 1px solid #0E0875;
+}
+
+div.footer-content li.first {
+    border-left: 0 none;    
+}
+
+div#footer-bottom {
+    background: url("../images/footer_bottom.png") no-repeat;
+    margin: 0 auto;
+    padding: 0 0;
+    width: 980px;
+}
+
+/* Additional classes and id's. */
+.hide-element {
+    display: none;
+}
+
+div.content:after, .clearfix:after , .cleardiv {
+    clear: both;
+    visibility: hidden;
+    font-size: 0em;
+    height: 0em;
+}
+
+div.content:after, .clearfix:after {   
+    content: ".";
+    display: block;
+    height: 0;    
+    font-size: 0;
+}
+
+/* Deployment definition elements. */
+div#deployment-def {
+    height:400px;
+}
+
+div#deployment-def h2 {
+    font-size: 1.2em;
+}
+
+div.input-def {
+    background-color: #E2E2E2;
+    padding-top: 5px;
+    margin: 5px 0px 0px;
+}
+
+.input-def h3, .input-def p {
+    position: relative; /* Fixes rendering problem with text vanishing for short time in IE. */
+}
+
+.input-def h3 {
+    padding-left: 8px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.input-def h4 {    
+    font-size: 0.7em;
+    padding-bottom: 5px;
+}
+
+/* This holds all the radio buttons. */
+.radio-list {
+    border-bottom: 1px solid #ffffff;
+    margin-left: 8px;
+    margin-right: 7px;
+    margin-bottom: 8px;
+    padding: 10px 0px;
+    line-height: 1.8em;
+}
+
+.last {
+    border-bottom: 0 none;
+}
+
+.radio-list .ui-widget {
+    font-size: 0.7em;
+}
+
+.details-box {   
+    margin-left: 8px;
+    margin-bottom: 20px;
+    margin-right: 7px;
+    padding: 10px 0px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.details-box input {
+    width: 350px;       
+}
+
+table.details {
+    line-height: 1.8em;
+    width: 100%;
+}
+
+table.details td {
+    background-color: #F2F2F2;
+    font-weight: bold;
+    height: 20px;
+    padding-left: 10px;
+    padding-top: 5px;
+	padding-bottom: 5px;
+    border-top: 2px solid #FFFFFF;  
+}
+
+table.details tr.last {
+    border-bottom: 2px solid #FFFFFF;
+}
+
+div#change-settings {
+    float: right;
+    font-size: 0.7em;
+    margin: 0px 7px 7px 0px;
+}
+
+div#submit-form-container{
+    float: right;
+    font-size: 0.7em;
+    margin-top: 10px;
+}
+
+div.button-container {
+    display: block;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+div.button-container span {
+    margin-right: 15px;
+}
+
+div.button-container label {
+    margin-left: 5px;
+}
+
+div#button-container-top {
+    float: right;        
+    font-size: 0.7em;
+}
+
+.radio-par-list {
+    font-size: 1.0em;
+}
+
+.radio-par-list li {
+    float: left;
+    display: block;
+    margin-right: 15px;
+}
+
+.explain-link {
+    display: inline;
+    float: right;
+}
+
+.explain-list li {
+    list-style: square;
+}
+
+div.explain-dialog {
+    overflow: scroll;
+}
+
+div#param-section {	
+    margin-top: 15px;	
+}
+
+table.param-display {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 1.8em;
+}
+
+table.param-display th {
+    padding-left: 5px;
+    font-weight: bold;
+    border: 1px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+table.param-display td {
+    padding: 5px;
+    border: 1px solid #ffffff;
+}
+
+table.param-display th.param-entry {
+	width: 10%;
+}
+
+table.param-display th.value {
+	width: 10%;
+}
+
+
+table.param-display tfoot td {
+    text-align: center;
+    font-weight: bold;
+    border-top: 2px solid #ffffff;    
+}
+
+
+.ui-button-icon-only .ui-button-text {
+    padding: 0.35em;
+}
+
+.ui-button {   
+    font-size: inherit;
+    margin-left: -1px;
+}
+
+div.parameter-dialog h2 {
+    margin-top: 5px;
+    font-size: 0.9em;    
+}
+
+
+/* AJAX status box container. */
+div#ajax-status-box {
+    background-color: #FFFFFF;
+    display: none;     
+    border: 1px solid #66A3D2;
+    z-index: 10000;
+}
+
+div.ajax-error-box-res {
+    color: #FF0522;
+    font-size: 1.0em;
+    font-weight: bold;
+}
+
+div.parameter-ajax-error {
+    font-size: 0.7em;
+}
+
+div.main-input-load-error {
+    font-size: 0.7em;
+    padding-left: 8px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.res-text {
+    float: left;
+}
+
+ul.context-list {
+	font-size: 100%;
+}
+
+/* Live Validation styles */
+div.cell {
+    display: block;
+    float: left;
+    clear: both;
+}
+
+input.input-el {
+    display: block;
+    float: left;
+    clear: both;
+}
+
+span.LV_validation_message {
+    /*float: left;*/
+    display: block;
+    clear: both;
+    margin-top: 3px;
+}
+
+.LV_validation_message {    
+    font-weight: bold;
+}
+
+.LV_invalid {
+    color: #CC0000;
+}
+.LV_valid {
+    color: #00CC00;
+}
+.LV_valid_field, input.LV_valid_field:hover, input.LV_valid_field:active, textarea.LV_valid_field:hover, textarea.LV_valid_field:active, .fieldWithErrors input.LV_valid_field, .fieldWithErrors textarea.LV_valid_field {
+    border: 1px solid #00CC00;
+}
+.LV_invalid_field, input.LV_invalid_field:hover, input.LV_invalid_field:active, textarea.LV_invalid_field:hover, textarea.LV_invalid_field:active, .fieldWithErrors input.LV_invalid_field, .fieldWithErrors textarea.LV_invalid_field {
+    border: 1px solid #CC0000;
+}
+
+.custom-config {
+    color: #FF8900;
+    font-weight: bold;
+}
+
+ul.custom-config-notes {    
+    font-size: 1.0em;
+    /*background-color: #FBFBFB;*/
+    margin-bottom: 8px;
+    padding: 5px;
+    margin-top: 3px;
+}
+
+ul.custom-config-notes li {
+    list-style: inside;
+    list-style-image: url("../images/warning_small.png");
+    margin-top: 3px;
+}
+
+input, textarea, select {
+    background: url("../images/inputBg.gif") no-repeat scroll left top #FFFFFF;
+    border: 1px solid #AAAAAA;
+    margin-top: 2px;
+    padding: 2px;
+}
+
+input.checkbox {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    width: 15px;
+}
+
+input.maindim-input {
+	font-size: 1.0em;
+	width: 45px;
+}
+
+input.radio {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    width: 15px;
+}
+
+input:hover, textarea:hover, select:hover {
+    border: 1px solid #888888;
+}
+
+input:active, textarea:active, select:active {    
+    border: 1px solid #888888;
+}
+
+input.changingPar {
+    background: url("../images/inputBg_selected.gif") no-repeat scroll left top #FFFFFF;
+}
+
+input.user-qty {
+    color: #FF0522;
+    font-weight: bold;
+}
+
+.ui-dialog .ui-dialog-title {
+    float: left;
+    margin: 5px 16px 5px 5px;
+}
+
+div#session-reset-warn-dialog {
+    font-size: 1.1em;
+}
+
+/* Alternatives List */
+#alt-content-list {
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+
+.alternatives-list {
+	display: block;	
+}
+
+.alternatives-list li {
+	list-style-type: none;
+	display: block;	
+}
+
+span.check-status {
+	float: right;
+}
+
+.alt-content {
+	margin: 2px 2px 7px;	
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px;
+	border-radius: 10px;	
+}
+
+
+.alt-content:hover {
+	background-color: #E3F6CE;	
+}
+
+.alt-content.selected, .alt-content.selected.eol:hover {
+    background-color: #F0F0F0;
+}
+
+.alt-content.eol:hover {
+	background-color: #F5DA81;
+}
+
+.alt-content.deprecated:hover {
+	background-color: #F0DDDD;	
+}
+
+.alt-h1 {
+	display: block;
+	font-size: 14px;
+	font-weight:bold;
+}
+	
+.alt-h2 {
+	display: block;
+	font-size: 12px;	
+}
+
+.alt-h2.deprecated {
+	color: #CC2233;
+}
+
+.alt-h2.eol {
+	color: #FF8000;
+}

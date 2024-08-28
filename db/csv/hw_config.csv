@@ -1,0 +1,124 @@
+Hardware Config Name,Description,
+HW_CONF1,"BL620 G7 (1 CPU, 16GB Mem)",
+HW_CONF2,"BL620 G7 (1 CPU, 32GB Mem)",
+HW_CONF3,"BL620 G7 (1 CPU, 64GB Mem)",
+HW_CONF4,"BL620 G7 (1 CPU, 96GB Mem)",
+HW_CONF5,"BL620 G7 (2 CPU, 96GB Mem)",
+HW_CONF6,"BL620 G7 (2 CPU, 128GB Mem)",
+HW_CONF7,"BL620 G7 (2 CPU, 160GB Mem)",
+HW_CONF8,"BL620 G7 (2 CPU, 192GB Mem)",
+HW_CONF9,"BL620 G7 (2 CPU, 224GB Mem)",
+HW_CONF10,"BL620 G7 (2 CPU, 256GB Mem)",
+HW_CONF11,"BL460 G6 (1 CPU, 8GB Mem)",
+HW_CONF12,"BL460 G6 (1 CPU, 16GB Mem)",
+HW_CONF13,"BL460 G6 (1 CPU, 32GB Mem)",
+HW_CONF14,"BL460 G6 (1 CPU, 48GB Mem)",
+HW_CONF15,"BL460 G6 (2 CPU, 64GB Mem)",
+HW_CONF16,"BL460 G6 (2 CPU, 96GB Mem)",
+HW_CONF17,"BL620 G7 (1 CPU, 96GB Mem)",
+HW_CONF18,"BL620 G7 (1 CPU, 128GB Mem)",
+HW_CONF19,"2_DL380 G6 (1 CPU, 16GB Mem)",
+HW_CONF20,"2_DL380 G6 (2 CPU, 16GB Mem)",
+HW_CONF21,"DL160 G6 (1 CPU, 8GB Mem)",
+HW_CONF22,"DL380 G6 (1 CPU, 16GB Mem)",
+HW_CONF23,"BL680 G5 (2 CPU, 64GB Mem)",
+HW_CONF24,"BL680 G5 (4 CPU, 128GB Mem)",
+HW_CONF25,"BL460 G6 (1 CPU, 8GB Mem)",
+HW_CONF26,"BL460 G6 (1 CPU, 16GB Mem)",
+HW_CONF27,"BL460 G6 (1 CPU, 24GB Mem)",
+HW_CONF28,"BL460 G6 (1 CPU, 32GB Mem)",
+HW_CONF29,"BL460 G6 (1 CPU, 40GB Mem)",
+HW_CONF30,"BL460 G6 (1 CPU, 48GB Mem)",
+HW_CONF31,"BL460 G6 (2 CPU, 56GB Mem)",
+HW_CONF32,"BL460 G6 (2 CPU, 64GB Mem)",
+HW_CONF33,"DL380 G6 (1 CPU, 16GB Mem)",
+HW_CONF34,"2_DL380 G6 (1 CPU, 32GB Mem)",
+HW_CONF35,"2_DL380 G6 (2 CPU, 32GB Mem)",
+HW_CONF36,EMC CX4-240,
+HW_CONF37,EMC CX4-480,
+HW_CONF38,EMC CX4-120,
+HW_CONF39,EMC CX4-240,
+HW_CONF40,"BL460 G6 (1 CPU, 8GB Mem)",
+HW_CONF41,"BL620 G7 (1 CPU, 16GB Mem)",
+HW_CONF42,"BL620 G7 (1 CPU, 32GB Mem)",
+HW_CONF43,"BL620 G7 (1 CPU, 64GB Mem)",
+HW_CONF44,"BL620 G7 (1 CPU, 96GB Mem)",
+HW_CONF45,"BL620 G7 (2 CPU, 96GB Mem)",
+HW_CONF46,"BL620 G7 (2 CPU, 128GB Mem)",
+HW_CONF47,"BL620 G7 (2 CPU, 160GB Mem)",
+HW_CONF48,"BL620 G7 (2 CPU, 192GB Mem)",
+HW_CONF49,"BL620 G7 (2 CPU, 224GB Mem)",
+HW_CONF50,"BL620 G7 (2 CPU, 256GB Mem)",
+HW_CONF51,"2_BL460 G6 (1 CPU, 8GB Mem)",
+HW_CONF52,DAE without Flare OS (5 x 450GB) + Disk Kit (0 x 450GB),
+HW_CONF53,DAE without Flare OS (10 x 450GB) + Disk Kit (20 x 450GB),
+HW_CONF54,DAE without Flare OS (15 x 450GB) + Disk Kit (30 x 450GB),
+HW_CONF55,DAE without Flare OS (20 x 450GB) + Disk Kit (40 x 450GB),
+HW_CONF56,DAE without Flare OS (25 x 450GB) + Disk Kit (50 x 450GB),
+HW_CONF57,DAE without Flare OS (30 x 450GB) + Disk Kit (60 x 450GB),
+HW_CONF58,DAE without Flare OS (35 x 450GB) + Disk Kit (70 x 450GB),
+HW_CONF59,DAE without Flare OS (40 x 450GB) + Disk Kit (80 x 450GB),
+HW_CONF60,DAE without Flare OS (45 x 450GB) + Disk Kit (90 x 450GB),
+HW_CONF67,DAE without Flare OS (0 x 450GB) + Disk Kit (0 x 450GB),
+HW_CONF61,"DL160 G6 (1 CPU, 8GB Mem)",
+HW_CONF62,"BL460 G6 (1 CPU, 8GB Mem)",
+HW_CONF63,"2_DL380 G6 (2 CPU, 32GB Mem)",
+HW_CONF64,"BL460 G6 (1 CPU, 8GB Mem)",
+HW_CONF65,"DL160 G6 (1 CPU, 8GB Mem)",
+HW_CONF66,"DL380 G6 (1 CPU, 16GB Mem)",
+HW_CONF69,C7000,
+HW_CONF70,FC Switch + Additional 8 Port + Cables,
+HW_CONF71,Two C7000,
+HW_CONF88,"2X BL460 G6 (1 CPU, 8GB Mem)",
+HW_CONF89,"2X BL460 G6 (1 CPU, 16GB Mem)",
+HW_CONF90,"2X BL460 G6 (1 CPU, 32GB Mem)",
+HW_CONF91,"2X BL460 G6 (1 CPU, 48GB Mem)",
+HW_CONF92,"2X BL460 G6 (2 CPU, 64GB Mem)",
+HW_CONF93,"4X BL460 G6 (2 CPU, 64GB Mem)",
+HW_CONF94,OMBS Config,
+HW_CONF95,OMBS Config,
+HW_CONF96,Three C7000,
+HW_CONF97,Four C7000,
+HW_CONF98,1X BL620 + 2 x BL460,
+HW_CONF99,AX4-5,
+HW_CONF72,2*Fibre Channel Switch+2*Additional 8 Port FC Switch Add on+10*HP 1 meter FC Cable+10*HP 2 meter FC Cable+10*HP 5 meter FC Cable,small config switch + cable
+HW_CONF73,2*Fibre Channel Switch+4*Additional 8 Port FC Switch Add on+10*HP 1 meter FC Cable+10*HP 2 meter FC Cable+10*HP 5 meter FC Cable,medium config switch + cable
+HW_CONF74,one C3000,"small, Enclosure option one"
+HW_CONF75,one C7000,"samll ,Enclosure, option two"
+HW_CONF77,one C7000,"medium config,enclosure."
+HW_CONF78,4*BL460 G6 +26*BL460 G6  Additional Kit +1* BL460 G6  Additional CPU Kit+ 4*Additional 8GB HBA Kit,small config blade
+HW_CONF79,6*BL460 G6 + 54*BL460 G6  Additional Kit+4* BL460 G6  Additional CPU Kit+6*Additional 8GB HBA Kit,medium config blade
+HW_CONF80,1*DL160 G6 + 1* Additional Quad Port NIC,MWS small
+HW_CONF81,1*DL160 G6+ 1*Additional Quad Port NIC,mws medium option one
+HW_CONF82,1*DL380 G6,mws medium option two.
+HW_CONF83,1*DAE without Flare OS (5 x 450GB)+2*Disk Kit (5 x 450GB),DAE small
+HW_CONF84,6*DAE without Flare OS (5 x 450GB) + 16*Disk Kit (5 x 450GB),DAE medium
+HW_CONF85,2*DL380 G6 Base Kit+2*DL380 G6  Additional CPU Kit+1*Additional Quad Port NIC+2*BL 460 G6 Additional 8GB Memory kit (Same Memory for DL380 G6),NAS samll opt1
+HW_CONF86,2*DL380 G6 Base Kit+2*DL380 G6  Additional CPU Kit+2*BL 460 G6 Additional 8GB Memory kit (Same Memory for DL380 G6),NAS samll opt2
+HW_CONF87,2*DL380 G6 Base Kit +1*Additional Quad Port NIC+2*BL 460 G6 Additional 8GB Memory kit (Same Memory for DL380 G6),NAS samll opt3
+HW_CONF115,2*DL380 G6 Base Kit +2*BL 460 G6 Additional 8GB Memory kit (Same Memory for DL380 G6),NAS samll opt4
+HW_CONF116,2*DL380 G6 Base Kit+2*DL380 G6  Additional CPU Kit+1*Additional Quad Port NIC+2*BL 460 G6 Additional 8GB Memory kit (Same Memory for DL380 G6),NAS medium opt1
+HW_CONF117,2*DL380 G6 Base Kit+2*DL380 G6  Additional CPU Kit+2*BL 460 G6 Additional 8GB Memory kit (Same Memory for DL380 G6),NAS medium opt2
+HW_CONF100,2*DL380 G6 Base Kit +2*BL 460 G6 Additional 8GB Memory kit (Same Memory for DL380 G6),NAS medium opt4
+HW_CONF101,1*BL460 G6+1*Additional 8GB HBA Kit + 2*MSL4048 Tape Autoloader,"OMBS,small opt1"
+HW_CONF102,1*BL460 G6+1*Additional 8GB HBA Kit + 1*MSL8096 Tape Autoloader,"OMBS,small opt2"
+HW_CONF103,1*BL460 G6+1*Additional 8GB HBA Kit+2*MSL4048 Tape Autoloader,"OMBS, medium op1"
+HW_CONF104,1*BL460 G6+1*Additional 8GB HBA Kit + 1*MSL8096 Tape Autoloader,"OMBS, medium op2"
+HW_CONF105,1*EMC CX4-120,"Storage, small"
+HW_CONF106,2*EMC CX4-240,"Storage, medium"
+HW_CONF107,,Presentation small
+HW_CONF108,,mediation samll
+HW_CONF109,,co ordinator small
+HW_CONF110,,IQ server small
+HW_CONF111,,Presentation med
+HW_CONF112,,co ordinator med
+HW_CONF113,,mediation med
+HW_CONF114,,iq server med
+HW_CONF118,2*DL380 G6 Base Kit +1*Additional Quad Port NIC+2*BL 460 G6 Additional 8GB Memory kit (Same Memory for DL380 G6),NAS medium opt3
+HW_CONF119,2 HH Blades 22 Mem Kits 2 CPU Kits 2 HBA Kits,
+HW_CONF120,2 HH Blades 6 Mem Kits 2 CPU Kits 2 HBA Kits,
+HW_CONF121,FC Switch + Additional 8 Port + Cables AX4-5,
+HW_CONF122,Nothing,
+HW_CONF123,Nothing,
+HW_CONFXX,Test HW Conf XX,
+HW_CONFYY,Test HW Conf YY,

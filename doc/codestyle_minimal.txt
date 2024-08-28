@@ -1,0 +1,12 @@
+Code style notes
+================
+
+* Variables:
+  - protected final (constants)
+  - public
+
+* Getters / Setters
+
+* Methods
+  - public first
+  - private afterwards

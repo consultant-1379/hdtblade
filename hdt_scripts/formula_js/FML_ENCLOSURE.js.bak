@@ -1,0 +1,259 @@
+// Code for Enclosure calculation. This depends on the # and type of blades selected in other systems.
+
+var unresolved_dependency = 'false';
+var ENCLOSURE_NUMBER = -1;
+var sum_half = 0;
+var sum_full = 0;
+
+//
+// Check and add dependencies, if necessary.
+//
+// Full Height
+if (typeof(ADMIN_APP901446_QTY) == 'undefined') {	
+	HDT_THIS.addAPPDependency('ADMIN', 'APP901446');	
+	unresolved_dependency = 'true';
+} else {
+	if (ADMIN_APP901446_QTY != -1.0) {
+		sum_full += ADMIN_APP901446_QTY;
+	}
+}
+
+// Full Height
+if (typeof(UAS_APP901446_QTY) == 'undefined') {
+	HDT_THIS.addAPPDependency('UAS', 'APP901446');
+	unresolved_dependency = 'true';
+} else {
+	if (UAS_APP901446_QTY != -1.0) {
+		sum_full += UAS_APP901446_QTY;
+	}
+}
+
+// Full Height
+if (typeof(OMBS_APP901446_QTY) == 'undefined') {
+	HDT_THIS.addAPPDependency('OMBS', 'APP901446');
+	unresolved_dependency = 'true';
+} else {
+	if (OMBS_APP901446_QTY != -1.0) {
+		sum_full += OMBS_APP901446_QTY;
+	}
+}
+
+// Full Height
+if (typeof(INF_APP901446_QTY) == 'undefined') {
+	HDT_THIS.addAPPDependency('INF', 'APP901446');
+	unresolved_dependency = 'true';
+} else {
+	if (INF_APP901446_QTY != -1.0) {
+		sum_full += INF_APP901446_QTY;
+	}
+}
+
+// Full Height
+if (typeof(OMSAS_APP901446_QTY) == 'undefined') {
+	HDT_THIS.addAPPDependency('OMSAS', 'APP901446');
+	unresolved_dependency = 'true';
+} else {
+	if (OMSAS_APP901446_QTY != -1.0) {
+		sum_full += MSAS_APP901446_QTY;
+	}
+}
+
+// Full Height
+if (typeof(WAS_APP901446_QTY) == 'undefined') {
+	HDT_THIS.addAPPDependency('WAS', 'APP901446');
+	unresolved_dependency = 'true';
+} else {
+	if (WAS_APP901446_QTY != -1.0) {
+		sum_full += WAS_APP901446_QTY;
+	}
+}
+
+// Full Height
+if (typeof(BIS_APP901446_QTY) == 'undefined') {
+	HDT_THIS.addAPPDependency('BIS', 'APP901446');
+	unresolved_dependency = 'true';
+} else {
+	if (BIS_APP901446_QTY != -1.0) {
+		sum_full += BIS_APP901446_QTY;
+	}
+}
+
+// Full Height
+if (typeof(NEDSS_APP901446_QTY) == 'undefined') {
+	HDT_THIS.addAPPDependency('NEDSS', 'APP901446');
+	unresolved_dependency = 'true';
+} else {
+	if (NEDSS_APP901446_QTY != -1.0) {
+		sum_full += NEDSS_APP901446_QTY;
+	}
+}
+
+// Full Height
+if (typeof(OAP_APP901446_QTY) == 'undefined') {
+	HDT_THIS.addAPPDependency('OAP', 'APP901446');
+	unresolved_dependency = 'true';
+} else {
+	if (OAP_APP901446_QTY != -1.0) {
+		sum_full += OAP_APP901446_QTY;
+	}
+}
+
+// Full Height
+if (typeof(EBA_APP901446_QTY) == 'undefined') {
+	HDT_THIS.addAPPDependency('EBA', 'APP901446');
+	unresolved_dependency = 'true';
+} else {
+	if (EBA_APP901446_QTY != -1.0) {
+		sum_full += EBA_APP901446_QTY;
+	}
+}
+
+// Full Height
+if (typeof(ENIQS_APP901446_QTY) == 'undefined') {
+	HDT_THIS.addAPPDependency('ENIQS', 'APP901446');
+	unresolved_dependency = 'true';
+} else {
+	if (ENIQS_APP901446_QTY != -1.0) {
+		sum_full += ENIQS_APP901446_QTY;
+	}
+}
+
+// Half Height
+if (typeof(ADMIN_APP901442_QTY) == 'undefined') {	
+	HDT_THIS.addAPPDependency('ADMIN', 'APP901442');	
+	unresolved_dependency = 'true';
+} else {
+	if (ADMIN_APP901442_QTY != -1.0) {
+		sum_half += ADMIN_APP901442_QTY;
+	}
+}
+
+// Half Height
+if (typeof(UAS_APP901442_QTY) == 'undefined') {
+	HDT_THIS.addAPPDependency('UAS', 'APP901442');
+	unresolved_dependency = 'true';
+} else {
+	if (UAS_APP901442_QTY != -1.0) {
+		sum_half += UAS_APP901442_QTY;
+	}
+}
+
+// Half Height
+if (typeof(OMBS_APP901442_QTY) == 'undefined') {
+	HDT_THIS.addAPPDependency('OMBS', 'APP901442');
+	unresolved_dependency = 'true';
+} else {
+	if (OMBS_APP901442_QTY != -1.0) {
+		sum_half += OMBS_APP901442_QTY;
+	}
+}
+
+// Half Height
+if (typeof(INF_APP901442_QTY) == 'undefined') {
+	HDT_THIS.addAPPDependency('INF', 'APP901442');
+	unresolved_dependency = 'true';
+} else {
+	if (INF_APP901442_QTY != -1.0) {
+		sum_half += INF_APP901442_QTY;
+	}
+}
+
+// Half Height
+if (typeof(OMSAS_APP901442_QTY) == 'undefined') {
+	HDT_THIS.addAPPDependency('OMSAS', 'APP901442');
+	unresolved_dependency = 'true';
+} else {
+	if (OMSAS_APP901442_QTY != -1.0) {
+		sum_half += OMSAS_APP901442_QTY;
+	}
+}
+
+// Half Height
+if (typeof(WAS_APP901442_QTY) == 'undefined') {
+	HDT_THIS.addAPPDependency('WAS', 'APP901442');
+	unresolved_dependency = 'true';
+} else {
+	if (WAS_APP901442_QTY != -1.0) {
+		sum_half += WAS_APP901442_QTY;
+	}
+}
+
+
+// Half Height
+if (typeof(BIS_APP901442_QTY) == 'undefined') {
+	HDT_THIS.addAPPDependency('BIS', 'APP901442');
+	unresolved_dependency = 'true';
+} else {
+	if (BIS_APP901442_QTY != -1.0) {
+		sum_half += BIS_APP901442_QTY;
+	}
+}
+
+
+// Half Height
+if (typeof(NEDSS_APP901442_QTY) == 'undefined') {
+	HDT_THIS.addAPPDependency('NEDSS', 'APP901442');
+	unresolved_dependency = 'true';
+} else {
+	if (NEDSS_APP901442_QTY != -1.0) {
+		sum_half += NEDSS_APP901442_QTY;
+	}
+}
+
+// Half Height
+if (typeof(OAP_APP901442_QTY) == 'undefined') {
+	HDT_THIS.addAPPDependency('OAP', 'APP901442');
+	unresolved_dependency = 'true';
+} else {
+	if (OAP_APP901442_QTY != -1.0) {
+		sum_half += OAP_APP901442_QTY;
+	}
+}
+
+// Half Height
+if (typeof(EBA_APP901442_QTY) == 'undefined') {
+	HDT_THIS.addAPPDependency('EBA', 'APP901442');
+	unresolved_dependency = 'true';
+} else {
+	if (EBA_APP901442_QTY != -1.0) {
+		sum_half += EBA_APP901442_QTY;
+	}
+}
+
+// Half Height
+if (typeof(ENIQS_APP901442_QTY) == 'undefined') {
+	HDT_THIS.addAPPDependency('ENIQS', 'APP901442');
+	unresolved_dependency = 'true';
+} else {
+	if (ENIQS_APP901442_QTY != -1.0) {
+		sum_half += ENIQS_APP901442_QTY;
+	}
+}
+
+
+// If there was only one undefined dependency, throw an Exception.
+if (unresolved_dependency === 'true') {
+	// This stops execution of the script and tells the HDT engine to reevaluate the results in the next pass.	
+	throw 'APPDependencyException';
+}
+
+//
+// Actual Dimensioning step.
+//
+
+// This implements the rule: Keep one free slot when odd number of full heigths.
+var total = -1.0;
+if (sum_half > 0) {
+	total = sum_full + (sum_full % 2) + (sum_half * 0.5);
+} else {
+	total = sum_full;
+}
+
+// Work out the total amount of enclosures needed.
+if (total <= 8.0) {
+	ENCLOSURE_NUMBER = 1;
+} else {
+	ENCLOSURE_NUMBER = Math.ceil(total / 8)
+}
+
+

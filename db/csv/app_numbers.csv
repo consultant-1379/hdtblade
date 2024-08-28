@@ -1,0 +1,44 @@
+APP Number,Desciption,Last Order Date,End of Service Life,Expose Object
+APP901442,BL460 G6,6/30/2012,6/30/2017,1.0
+APP901446,BL620 G7,3/1/2012,3/1/2017,1.0
+APP901449,DL380 G6,6/30/2012,6/30/2017,0.0
+APP901450,DL160 G6,4/1/2012,4/1/2017,0.0
+APP901458,CX4-120 Including 2 DAE,Q4 2012,Q4 2017,0.0
+APP901459,CX4-240 Including 2 DAE,Q4 2012,Q4 2017,0.0
+APP901460,CX4-480 Including 2 DAE,Q4 2012,Q4 2017,0.0
+APP901448,BL620 G7 Memory Kit,12/31/2013,* to be defined *,0.0
+APP901447,BL620 G7 CPU Kit,3/1/2013,* to be defined *,0.0
+APP901443,DL380 / BL460 G6 8GB Memory kit,12/31/2013,* to be defined *,0.0
+APP901444,BL460 G6 CPU Kit,6/30/2012,* to be defined *,0.0
+APP901467,DL380 G6 CPU Kit,6/30/2012,* to be defined *,0.0
+APP901423,BL680 G5,* to be defined *,* to be defined *,1.0
+APP901424,BL680 G5 CPU & Memory Kit,10/1/2011,* to be defined *,0.0
+APP901421,BL460 G6 EE,6/30/2012,6/30/2017,1.0
+APP901426,BL460 G6  CPU Kit EE,6/30/2012,* to be defined *,0.0
+APP901422,BL460 G6  Memory Kit EE,12/31/2013,* to be defined *,0.0
+APP901466,DL380 G6  CPU Kit,6/30/2012,* to be defined *,0.0
+APP901407,CX4-480 EE,Q4 2012,Q4 2017,0.0
+APP901461,DAE without Flare OS (5 x 450GB) Kit,* to be defined *,* to be defined *,0.0
+APP901462,Disk Kit (5 x 450GB),* to be defined *,* to be defined *,0.0
+APP901468,Additional Quad Port NIC,* to be defined *,* to be defined *,0.0
+APP901445,Additional 8GB HBA Kit,* to be defined *,* to be defined *,0.0
+APP901510,DL160 4 Disk Kit,* to be defined *,* to be defined *,0.0
+APP901457,C7000 Base Kit,* to be defined *,* to be defined *,0.0
+APP901504,Fibre Channel Switch,* to be defined *,* to be defined *,0.0
+APP901509,Additional 8 Port FC Switch Add on,* to be defined *,* to be defined *,0.0
+APP901490,HP 1 meter FC Cable,* to be defined *,* to be defined *,0.0
+APP901491,HP 2 meter FC Cable,* to be defined *,* to be defined *,0.0
+APP901492,HP 5 meter FC Cable,* to be defined *,* to be defined *,0.0
+APP901516,BL460 G6 Additional 16GB,* to be defined *,* to be defined *,0.0
+APP901515,BL460 G6 Base Kit,* to be defined *,* to be defined *,1.0
+APP901419,C7000 Base Kit,* to be defined *,* to be defined *,0.0
+APP901428,MSL4048 Tape Autoloader,* to be defined *,* to be defined *,0.0
+APP901432,MSL8096 Tape Autoloader,* to be defined *,* to be defined *,0.0
+APP901405,EMC CX4-120,* to be defined *,* to be defined *,0.0
+APP901419,C7000 Base Kit,* to be defined *,* to be defined *,0.0
+APP901418,C3000 Base Kit,* to be defined *,* to be defined *,0.0
+APP901427,MSL2024 Tape Autoloader,* to be defined *,* to be defined *,0.0
+APP901453,MSL4048 Tape Autoloader,* to be defined *,* to be defined *,0.0
+APP901511,AX4-5,Q4 2012,Q4 2017,0.0
+APPXXX,Test APP XXX,Never,Never,0.0
+APPYYY,Test APP YYY,Never,Never,0.0

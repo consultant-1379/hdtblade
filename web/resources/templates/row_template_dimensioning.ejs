@@ -1,0 +1,164 @@
+<%
+    var len = roleList.length;
+    var last = len - 1;
+    for(var i = 0; i < len ; i++) {
+        var this_role = roleList[i];
+        var role_name = this_role.name;
+        var applicable_system = this_role.applicableSystemName;
+        var modified_role = this_role.userModified;
+        var role_description = this_role.description;
+        var role_alternatives = alternativesMap[role_name];        
+        var contains_empty_app_list = hasAPPErrorsMap[role_name];
+        var last_row = (i == last);
+
+        if (!last_row) {
+%>
+    <tbody class="result-rows">
+<%
+        } else {
+%>
+    <tbody class="result-rows last-row">
+<%
+    }
+%>
+    <tr>
+        <td class="role-col">
+            <span class="role-info"><%= role_description %></span>
+            <ul class="role-menu">
+                <li><a id="<%= role_name %>" href="javascript:void(0);" class="modify-parameter-link arrow-link system:<%= applicable_system %>">Change Detailed Parameters</a></li>
+                <li><a id="<%= role_name %>" href="javascript:void(0);" class="modify-alt-link arrow-link ">Show Hardware Alternatives</a></li>
+                <li id="<%= role_name %>-app-modified-submit" class="hide-element"><a href="javascript:void(0);" class="arrow-link submit-app-changes">Submit changed APP(s).</a></li>
+            </ul>
+
+<%
+            if (modified_role == true) {
+%>
+                <ul class="custom-config-notes">
+                    <li>Role modified.</li>
+                    <li id="<%= role_name %>-app-modified-note" class="hide-element">APP(s) modified. Submit changes first.</li>
+<%
+            } else {
+%>
+               <ul id="<%= role_name %>-custom-config-notes" class="custom-config-notes hide-element">
+                    <li>APP(s) modified. Submit changes first.</li>
+<%
+            }
+%>
+                </ul>
+        </td>
+
+       <td class="recommended-col">
+       <table class="hw-results-tbl">
+       <thead>
+            <th class="result-app">APP</th>
+            <th class="result-qty">Qty</th>
+            <th class="result-desc">Description</th>
+            <th class="result-sel">Selected</th>
+        </thead>
+
+        <tbody>
+<%      if (role_alternatives != undefined ) {
+            var s = role_alternatives.selectedAlternative;             
+            var app_list = '';
+
+            if (s) {
+                app_list = s.alternative;
+            }
+            
+            if (app_list != '' && !contains_empty_app_list) {
+                for (var j = 0; j < app_list.length; j++) {
+                    var app_num = app_list[j];                    
+%>
+			<tr>
+                            <td><span class="res-text"><%= app_num.name  %></span></td>                            
+                            <td><span class="res-text"><%= app_num.quantity %></span></td>
+                            <td><span class="res-text"><%= app_num.description  %></span></td>
+<%
+    if (app_num.userQtySet == false) {
+%>
+                            <td class="result-sel"><input id="<%= app_num.name  %>" type="text" class="qty-input-right role_name:<%= role_name %> previous:<%= app_num.quantity  %>" value="<%= app_num.quantity  %>"/></td>
+<%
+    } else {
+%>
+                            <td class="result-sel"><input id="<%= app_num.name  %>" type="text" class="qty-input-right user-qty role_name:<%= role_name %> previous:<%= app_num.userQuantity  %>" value="<%= app_num.userQuantity  %>"/></td>
+<%
+    }
+%>
+			</tr>
+<%                    
+                }
+            } else {
+%>
+                    <tr>
+                        <td><span class="res-text">No result.</span></td>
+                        <td><span class="res-text">No result.</span></td>
+                        <td><span class="res-text">No result.</span></td>
+                        <td class="result-sel"><span class="res-text">No result.</span><a id="<%= role_name %>" class="arrow-link explain-link" href="javascript:void(0);">Why?</a></td>
+                    </tr>
+                   
+                    <div id="explain-dialog-<%= role_name %>" class="explain-dialog hide-element">
+                    <p>
+                    <li class="explain-list">
+<%
+                for(var k = 0; k < errorList.length; k++) {
+                    var error_desc = errorList[k].errorDescription;
+                    var error_info = errorList[k].additionalInfo;
+%>
+                            <ul>[ <%=k%> ] Error: <%=error_desc%> === Additional info: <%=error_info%></ul>
+
+<%
+                }
+%>
+                    </li>
+                    </p>
+                    </div>
+<%
+            }
+	} else {
+%>
+            <tr>
+                <td><span class="res-text">No result.</span></td>
+                <td><span class="res-text">No result.</span></td>
+                <td><span class="res-text">No result.</span></td>
+                <td class="result-sel"><span class="res-text">No Result.</span><a id="<%= role_name %>" class="arrow-link explain-link" href="javascript:void(0);">Why?</a></td>
+            </tr>            
+
+            <div id="explain-dialog-<%= role_name %>" class="explain-dialog hide-element">
+            <p>
+            <li class="explain-list">
+<%
+            for(var k = 0; k < errorList.length; k++) {
+                var error_desc = errorList[k].errorDescription;
+                var error_info = errorList[k].additionalInfo;
+%>
+                            <ul>[ <%=k%> ] Error: <%=error_desc%> === Additional info: <%=error_info%></ul>
+
+<%
+            }
+%>
+            </li>
+            </p>
+            </div>
+<%
+	}
+%>
+        </tbody>        
+        </table>
+
+        
+        <div id="parameter-dialog-<%= role_name %>" class="parameter-dialog hide-dialog">
+            <div id="parameter-dialog-<%= role_name %>-content" class="hide-dialog"/>
+        </div>
+
+         <div id="alternatives-dialog-<%= role_name %>" class="parameter-dialog hide-dialog">
+            <div id="alternatives-dialog-<%= role_name %>-content" class="hide-dialog"/>
+        </div>
+
+        </td>
+   </tr>
+   </tbody>	     
+<% }
+%>
+
+
+            

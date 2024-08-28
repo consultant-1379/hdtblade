@@ -1,0 +1,5 @@
+Notes,Show Note
+Localised Power Supply Units have to be chosen separately in the ECP tool.,1.0
+Data is subject to change up to respective GA dates.,1.0
+If you wish to purchase the HW preconfigured you need to fit on 1 Enclosure. To do this set EBAS and OCS APP quantities to zero.,1.0
+Altering quantities may lead to unsupported configurations and any alterations must be reviewed / approved before ordering,1.0

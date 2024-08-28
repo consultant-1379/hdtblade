@@ -1,0 +1,106 @@
+html,
+body {
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+    color: #000;
+    font-size: 90%;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+div#doc {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+div#main-nav,
+div#footer {
+    display: none
+}
+
+div#header {
+    background-color: transparent;
+    height: 3.5em;
+    font-size: 0.8em;
+    border-bottom: 1px solid #000;
+}
+
+h1#logo {
+    left: 0
+}
+
+span.button-container {
+	float: right;
+}
+
+span.button-container button {
+    margin-left: 2px;
+}
+
+/* Hardware results table. */
+table.hw-results-tbl {
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: 1.0em;
+}
+
+table.hw-results-tbl th {
+    /*background-color: #ADADAD;*/   
+}
+
+table.hw-results-tbl td {
+    /*background-color: #F2F2F2;*/
+    padding-bottom: 3px;
+    vertical-align: top;
+}
+
+table.hw-results-tbl th, table.hw-results-tbl td {
+    border-top: none;
+}
+
+table.hw-results-tbl tfoot td {
+    font-weight: bold;
+    width: 8px;
+    /*border-top: 2px solid #ADADAD;*/
+}
+
+table.hw-results-tbl tfoot td.hw-desc {
+    text-align: center;
+}
+
+/* Result table column widths for report page. */
+table.hw-results-tbl th.result-app-rep {
+    width: 10%;
+}
+
+table.hw-results-tbl th.result-qty-rep {
+    width: 10%;
+}
+
+table.hw-results-tbl th.result-desc-rep {
+    width: 35%;
+}
+
+table.hw-results-tbl th.result-sel-rep {
+    width: 15%;
+    text-align: right;
+}
+
+table.hw-results-tbl th.result-eol-rep {
+    width: 15%;
+}
+
+table.hw-results-tbl th.result-lod-rep {
+    width: 15%;
+    text-align: right;
+}
+
+div.warn-note {
+    color: #FF0522;
+    font-size: 1.0em;
+}

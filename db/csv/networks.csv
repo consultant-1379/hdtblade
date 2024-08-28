@@ -1,0 +1,12 @@
+Network Name,Network Description
+LR,LTE
+LR_CN,LTE + EPC
+WR,WCDMA
+WR_CN,WCDMA + EPC
+WR_LR,WCDMA + LTE
+WR_LR_CN,WCDMA + LTE + EPC
+CN,EPC
+GR,GRAN
+Packet Core Only,Packet Core Only
+Packet Core & RAN,Packet Core & RAN
+Default,Default

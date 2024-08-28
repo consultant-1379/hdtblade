@@ -1,0 +1,110 @@
+<%
+// Get the configuration name.
+var config_selected = $("input[name='bundleId']:checked").attr("id");
+var par_list = parameters_results_cache.mainDimParMap[config_selected];
+var empty_par_list = jQuery.isEmptyObject(par_list);           
+%>
+<div id="param-section">
+    <table class="param-display">
+        <thead>
+            <tr>
+                <th>Parameter</th>
+                <th class="value">Default</th>
+                <th class="param-entry">Value</th>
+                <th>Context</th>                
+            </tr>
+        </thead>
+        <tbody>
+<%
+// Iterate over list of parameters.
+if (empty_par_list != true) {
+    for(var i = 0; i < par_list.length; i++) {
+        var parameter = par_list[i];        
+                
+        var role_str = parameter.context.roleContext;
+        // We keep the internal name for later.
+        var roleCtx = role_str;
+
+        if(role_str == "ANY_ROLE") {
+            role_str = "Applies to all servers.";
+        }
+
+        var net_str = parameter.context.networkContext;
+        if(net_str == "ANY_NETWORK") {
+            net_str = "Applies to all networks.";
+        }
+
+        var sys_str = parameter.context.systemContext;
+        if(sys_str == "ANY_SYSTEM") {
+            sys_str = "Applies to all systems.";
+        }
+
+%>
+    <tr>
+        <td><%=parameter.description%></td>
+<%
+        var pName = parameter.name;
+        var pCtx = parameter.Context;
+        var defVal = parameter.defaultValue;
+        var visibility = parameter.visibility;
+        
+        // Open the tag string.
+        var tag_str = "<input type=";
+        
+        if (parameter.parameterType == "Boolean") {
+            tag_str += "'checkbox'"; 
+            if (Boolean(defVal) == Boolean("true")) {
+                tag_str += " checked ";
+%>
+                <td>On</td>                                
+<%
+            } else {
+%>
+                <td>Off</td>                
+<%
+            }
+        } else {
+            tag_str += "'text' value=" + defVal;
+%>
+            <td><%=parameter.defaultValue%></td>            
+<%      
+        }
+        
+        tag_str += " class='input-el maindim-input parameterName:" + pName + " roleContext:" + roleCtx + " previous:" + defVal;
+        if (visibility == 4) {
+            tag_str += "' disabled ";
+        } else {
+            tag_str += "'";
+        }
+        // Close the input tag.
+        tag_str += "></input></td>";
+%>
+
+        <td><%=tag_str%></td>
+        <td>
+        <ul class="context-list">
+            <li><%=role_str%></li>
+            <li><%=net_str%></li> 
+            <li><%=sys_str%></li>
+	</ul>
+        </td>        
+    </tr>
+<%
+    }
+} else {
+%>
+    <tr>
+    <td>No data.</td>
+    <td>No data.</td>
+    <td>No data.</td>
+    <td>No data.</td>
+    <td>No data.</td>
+<%
+}
+%>
+    </tbody>
+    <tfoot>
+        <tr><td colspan="5">Main Dimensioning Parameters</td></tr>
+    </tfoot>
+    </table>
+</div>

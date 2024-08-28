@@ -1,0 +1,24 @@
+import platform;
+from sys import exit;
+
+#
+# MySQL configuration
+#
+HOSTNAME = "eiebhvh006.eei.ericsson.se";
+USERNAME = "root";
+PASSWORD = "not124get";
+DATABASE = "hdt";
+
+#
+# JavaScript formula files directory.
+#
+sys_str = platform.system();
+if sys_str == "Windows":
+	print "*** Running tool on Windows";
+	JSFILES_DIRECTORY = "C:\\Users\\Ralph\\Documents\\NetBeansProjects\\HDT\\hdt_scripts\\formula_js"
+elif sys_str == "Linux":
+	print "*** Running tool on Linux";
+	JSFILES_DIRECTORY = "/home/sral/NetBeansProjects/HDT/hdt_scripts/formula_js";
+else:
+	print "Could not determine type of system. Aborting.";
+	sys.exit(-1)
